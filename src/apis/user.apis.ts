@@ -1,8 +1,10 @@
+import http from "@/lib/http";
+
 export const getUser = async () => {
   try {
-    const result = await fetch(`/users/get-all-users`);
+    const result = await http(`/users/get-all-users`);
 
-    return result.json();
+    return result;
   } catch (error) {
     console.log("error :>> ", error);
   }

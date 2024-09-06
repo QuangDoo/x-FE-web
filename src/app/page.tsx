@@ -20,7 +20,7 @@ export default async function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Header />
 
-        {/* <HomePage /> */}
+        <HomePage />
       </main>
     </HydrationBoundary>
   );

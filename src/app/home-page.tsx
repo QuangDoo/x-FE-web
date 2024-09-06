@@ -11,7 +11,7 @@ function HomePage() {
 
   return (
     <div>
-      {user?.data.map((item: any) => (
+      {(user?.data as any)?.map((item: any) => (
         <div key={item.name}>{item.name}</div>
       ))}
     </div>
