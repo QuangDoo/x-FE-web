@@ -37,6 +37,11 @@ function Header() {
         setHeaderY((prevY) =>
           Math.min(prevY + (lastScrollY - currentScrollY), 0)
         ); // Tối đa trở lại vị trí ban đầu (0)
+
+        // Thêm điều kiện để tránh vượt quá giá trị 0
+        if (headerY >= 0) {
+          setHeaderY(0); // Đảm bảo không vượt quá 0
+        }
       }
 
       setLastScrollY(currentScrollY); // Cập nhật vị trí cuộn trước đó
