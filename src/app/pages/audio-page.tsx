@@ -41,16 +41,16 @@ export default function AudioPage() {
     const formData = new FormData();
     formData.append("audio", audioBlob, "recording.mp3");
 
-    try {
-      const response = await fetch("/api/upload-audio", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await response.json();
-      console.log(data); // Hiển thị kết quả từ backend
-    } catch (error) {
-      console.error("Error uploading audio:", error);
-    }
+    // try {
+    //   const response = await fetch("/api/upload-audio", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
+    //   const data = await response.json();
+    //   console.log(data); // Hiển thị kết quả từ backend
+    // } catch (error) {
+    //   console.error("Error uploading audio:", error);
+    // }
   };
 
   return (
