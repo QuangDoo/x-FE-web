@@ -12,7 +12,8 @@ export default async function Home() {
 
   return (
     <div className="text-white mt-28">
-      <AudioPage />
+      {/* <AudioPage /> */}
+      Hello
     </div>
   );
 }
